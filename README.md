@@ -2,6 +2,8 @@
 
 Configure the Lumberjack logging framework from JSON
 
+![Build Status](https://github.com/jonathanstowe/Lumberjack-Config-JSON/workflows/CI/badge.svg)
+
 ## Synopsis
 
 ```raku

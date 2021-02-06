@@ -171,9 +171,13 @@ class Lumberjack::Config::JSON does JSON::Class {
     my %level-enums = Lumberjack::Level.enums;
 
     sub level-from-name(Str() $level-name --> Lumberjack::Level) {
-        my $l = Lumberjack::Level(%level-enums{$level-name});
+        my $l;
 
-        if $l ~~ Failure {
+        with %level-enums{$level-name} -> $e {
+            $l = Lumberjack::Level($e);
+        }
+
+        if $l ~~ Failure  || !$l.defined {
             X::Lumberjack::Config::JSON::NoLevel.new(:$level-name).throw;
         }
         $l;
