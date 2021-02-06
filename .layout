@@ -1,0 +1,73 @@
+{
+  "children": [
+    {
+      "name": "META6.json",
+      "type": "file"
+    },
+    {
+      "name": "Changes",
+      "type": "file"
+    },
+    {
+      "type": "file",
+      "name": "LICENCE"
+    },
+    {
+      "children": [
+        {
+          "name": "010-basic.t",
+          "type": "file"
+        },
+        {
+          "name": "030-fail.t",
+          "type": "file"
+        },
+        {
+          "type": "file",
+          "name": "001-meta.t"
+        },
+        {
+          "type": "file",
+          "name": "020-json-class.t"
+        }
+      ],
+      "name": "t",
+      "purpose": null,
+      "type": "directory"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "name": "Config",
+              "children": [
+                {
+                  "name": "JSON.rakumod",
+                  "type": "file"
+                }
+              ],
+              "purpose": null,
+              "type": "directory"
+            }
+          ],
+          "type": "directory",
+          "name": "Lumberjack",
+          "purpose": null
+        }
+      ],
+      "type": "directory",
+      "name": "lib",
+      "purpose": null
+    },
+    {
+      "type": "file",
+      "name": "Documentation.md"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    }
+  ],
+  "type": "layout"
+}
