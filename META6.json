@@ -1,0 +1,36 @@
+{
+  "name": "Lumberjack::Config::JSON",
+  "version": "0.0.1",
+  "auth" : "github:jonathanstowe",
+  "api"  : "1.0",
+  "description": "Simple Lumberjack configuration through JSON",
+  "resources": [
+  ],
+  "tags": [
+     "logging",
+     "configuration",
+     "JSON"
+  ],
+  "raku": "6.*",
+  "depends": {
+   "runtime": {
+      "requires": [
+           "JSON::Class:ver<0.0.16+>",
+           "Lumberjack:ver<0.1.1+>"
+        ]
+     }
+  },
+  "license": "Artistic-2.0",
+  "provides": {
+     "Lumberjack::Config::JSON" : "lib/Lumberjack/Config/JSON.rakumod"
+  },
+  "source-url": "https://github.com/jonathanstowe/Lumberjack-Config-JSON.git",
+  "support": {
+    "email": "jns+gh@gellyfish.co.uk",
+    "source": "https://github.com/jonathanstowe/Lumberjack-Config-JSON.git"
+  },
+  "authors": [
+    "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
+  ],
+  "meta-version": "2"
+}
