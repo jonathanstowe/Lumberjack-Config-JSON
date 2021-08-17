@@ -189,7 +189,7 @@ class Lumberjack::Config::JSON does JSON::Class {
         has Str @.classes;
         has     %.args;
 
-        has Lumberjack::Dispatcher $.dispatcher-object;
+        has Lumberjack::Dispatcher $.dispatcher-object is json-skip;
 
         method dispatcher-object( --> Lumberjack::Dispatcher ) {
             $!dispatcher-object //= do {
